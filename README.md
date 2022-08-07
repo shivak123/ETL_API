@@ -25,6 +25,10 @@
 <br> 5. During the inc load that is assume we are doing the inc load the very next day . then the fucntion will take only those records which are created and after that we are deleteing those id which are already in our final table to handle the updates and then we are inserting the data into the table 
 
 
+## MySQL Table OUTPUT :
+
+![image](https://user-images.githubusercontent.com/19462859/183294252-6f734848-a710-466b-aa4c-4003c9c10cda.png)
+
 
 
 ## steps to Installing Mysql server 
