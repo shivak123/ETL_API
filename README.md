@@ -11,7 +11,7 @@
 
 <br> 1. We have one date column in the data we have extracted which is Published_utc. which Return results published on, before, or after this date. So we have utilized this as our lastmodified date column for our full and inc load 
 
-<br> 2. Case 1:  Initial_load in our function by default set to False which means its a full load. And when our published_utc = '1900:01:01' 
+<br> 2. Case 1:  Initial_load in our function when the flag is set to True which means its a full load. And when our published_utc = '1900:01:01' 
 
 <br> 3. Case 2 : when the flag is set to False. the fucntion will take the data from yesterday as our inc load 
 
