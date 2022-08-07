@@ -7,6 +7,24 @@
 
 ## API USED : https://polygon.io/docs/stocks/get_v2_reference_news  --- One Endpoint which gives the most recent news articles relating to a stock ticker symbol, including a summary of the article and a link to the original source.
 
+## Handling full and inc load 
+
+<br> 1. We have one date column in the data we have extracted which is Published_utc. which Return results published on, before, or after this date. So we have utilized this as our lastmodified date column for our full and inc load 
+
+<br> 2. Case 1:  Initial_load in our function by default set to False which means its a full load. And when our published_utc = '1900:01:01' 
+
+<br> 3. Case 2 : when the flag is set to False. the fucntion will take the data from yesterday as our inc load 
+
+![image](https://user-images.githubusercontent.com/19462859/183293767-15a77b90-0644-43d1-8893-a56becad3b7c.png)
+
+##Note :As shown in the above snippet we need to change the flag to True for full and to False for Inc load to happen 
+
+
+<br> 4. Once the table is created with the required fields and during the initial or full load we inserting the records into the table.
+
+<br> 5. During the inc load that is assume we are doing the inc load the very next day . then the fucntion will take only those records which are created and after that we are deleteing those id which are already in our final table to handle the updates and then we are inserting the data into the table 
+
+
 
 
 ## steps to Installing Mysql server 
