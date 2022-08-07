@@ -1,8 +1,11 @@
 # ETL_API
 
-In this Project we aim is to extract the data from API - public API
+1.In this Project our aim is to extract the data from API - public API
 
-Then ingest the data into a MySql server and perform full load and inc load based on the flag 
+2.Then ingest the data into a MySql server and perform full load and inc load based on the flag 
+
+
+## API USED : https://polygon.io/docs/stocks/get_v2_reference_news  --- One Endpoint which gives the most recent news articles relating to a stock ticker symbol, including a summary of the article and a link to the original source.
 
 
 
